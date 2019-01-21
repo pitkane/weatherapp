@@ -46,7 +46,7 @@ router.get("/api/", async ctx => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen(port, "localhost");
+app.listen(port);
 
 console.log(`App listening on port ${port}`);
 
