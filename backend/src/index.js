@@ -37,41 +37,11 @@ const makeApiRequest = async query => {
   return _.get(response, "data", {});
 };
 
-// const fetchWeather = async () => {
-//   // const endpoint = `${mapURI}/weather?q=${targetCity}&appid=${appId}&`;
-
-//   const response = makeApiRequest("weather");
-
-//   // const response = await fetch(endpoint);
-
-//   return response ? response.json() : {};
-// };
-
-// const fetchForecast = async query => {
-//   const response = await makeApiRequest(query);
-
-//   return _.get(response, "data", {});
-// };
-
 router.get("/api/", async ctx => {
   const { query } = ctx.request;
 
   ctx.body = await makeApiRequest(query);
 });
-
-// router.get("/api/forecast", async ctx => {
-//   const { query } = ctx.request;
-
-//   const weatherData = await fetchWeather();
-//   const data = await fetchForecast(query);
-
-//   console.log(query);
-
-//   ctx.body = {
-//     weather = _.get(weatherData, "weather[0]", {}),
-//     forecast: data
-//   }
-// });
 
 app.use(router.routes());
 app.use(router.allowedMethods());
