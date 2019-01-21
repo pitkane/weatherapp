@@ -13,6 +13,8 @@
     "lint": "node_modules/.bin/eslint --ext .js --ext .jsx ."
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
