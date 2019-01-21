@@ -41,7 +41,7 @@ There are a few things you must do to get the app up and running. After that the
 
 ### Mandatory
 
-- ~~Get yourself an API key to make queries in the [openweathermap](http://openweathermap.org/.~~
+- ~~Get yourself an API key to make queries in the [openweathermap](<http://openweathermap.org/>~~
 
 - ~~Either run the app locally (using `npm i && npm start`) or move to the next step.~~
 
