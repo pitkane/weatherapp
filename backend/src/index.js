@@ -49,3 +49,9 @@ app.use(router.allowedMethods());
 app.listen(port);
 
 console.log(`App listening on port ${port}`);
+
+const close = () => {
+  app.close();
+};
+
+module.exports = app;
