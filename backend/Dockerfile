@@ -19,4 +19,4 @@ COPY . /app
 EXPOSE 9000
 
 # start app
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]

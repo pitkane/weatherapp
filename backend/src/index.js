@@ -33,6 +33,7 @@ router.get("/api/weather", async ctx => {
   ctx.body = weatherData.weather ? weatherData.weather[0] : {};
 });
 
+
 app.use(router.routes());
 app.use(router.allowedMethods());
 
