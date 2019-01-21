@@ -6,7 +6,13 @@
 
 `docker build -t weatherapp_frontend . && docker run --rm -i -p 8000:8000 --name weatherapp_frontend -t weatherapp_frontend`
 
-`docker-compose down && docker-compose up`
+`docker-compose down && docker-compose pull && docker-compose up --build --detach`
+
+<https://github.com/pitkane/weatherapp>
+
+<https://cloud.docker.com/repository/docker/pitkane/weatherapp_backend>
+
+<https://cloud.docker.com/repository/docker/pitkane/weatherapp_frontend>
 
 ## Original README.md
 
