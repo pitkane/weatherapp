@@ -28,7 +28,10 @@ module.exports = {
         use: [
           {
             loader: "babel-loader",
-            options: { presets: ["react", "es2016"] }
+            options: {
+              presets: ["@babel/preset-react"],
+              plugins: ["@babel/plugin-transform-runtime"]
+            }
           }
         ]
       }

@@ -10,7 +10,7 @@ RUN mkdir -p /app
 # http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
 ADD package.json /tmp/package.json
 ADD package-lock.json /tmp/package-lock.json
-RUN cd /tmp && npm ci --silent
+RUN cd /tmp && npm install --silent
 RUN mkdir -p /app && mv /tmp/node_modules /app/
 
 WORKDIR /app
