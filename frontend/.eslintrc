@@ -1,14 +1,11 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": ["airbnb", "prettier"],
   "env": {
     "es6": true,
     "node": true
   },
-  "rules": {
-    "semi": ["error", "always"],
-    "comma-dangle": ["error", "always-multiline"]
-  },
+  "rules": {},
   "globals": {
     "fetch": false,
     "document": true

@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 const baseURL = process.env.ENDPOINT;
 
@@ -19,27 +19,22 @@ class Weather extends React.Component {
     super(props);
 
     this.state = {
-      icon: "",
+      icon: ""
     };
   }
 
   async componentWillMount() {
     const weather = await getWeatherFromApi();
-    this.setState({icon: weather.icon.slice(0, -1)});
+    this.setState({ icon: weather.icon.slice(0, -1) });
   }
 
   render() {
     const { icon } = this.state;
 
     return (
-      <div className="icon">
-        { icon && <img src={`/img/${icon}.svg`} /> }
-      </div>
+      <div className="icon">{icon && <img src={`/img/${icon}.svg`} />}</div>
     );
   }
 }
 
-ReactDOM.render(
-  <Weather />,
-  document.getElementById('app')
-);
+ReactDOM.render(<Weather />, document.getElementById("app"));
